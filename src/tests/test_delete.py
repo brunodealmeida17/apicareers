@@ -5,8 +5,8 @@ url_base_api = 'http://127.0.0.1:8000/careers/'
 
 
 
-result = requests.delete(url=f'{url_base_api}3/')
+result = requests.delete(url=f'{url_base_api}5/')
 assert result.status_code == 204
 
-# Testando se o título do primeiro curso está correto
+# Testing if the title of the first course is correct.
 assert len(result.text) == 0

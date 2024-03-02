@@ -1,12 +1,12 @@
 import requests
 
 
-url_base_cursos = 'http://127.0.0.1:8000/careers/'
-resultado = requests.get(url=url_base_cursos)
+url_base_api = 'http://127.0.0.1:8000/careers/'
+resultado = requests.get(url=url_base_api)
 
 
-# Testando se o endpoint está correto
+# Testing if the endpoint is correct.
 assert resultado.status_code == 200
 
-# Testando se o título do primeiro curso está correto
-assert resultado.json()[0]['title'] == 'Python Jr/mid - backend'
+# Testing if the title of the first course is correct.
+assert resultado.json()[0]['title'] == 'Software Engineer (Backend)'

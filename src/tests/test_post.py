@@ -6,18 +6,18 @@ url_base_api = 'http://127.0.0.1:8000/careers/'
 resultado = requests.get(url=url_base_api)
 
 
-new_careers = {
+new_careers = {        
         "username": "brunodealmeida17",
-        "title": "DevOps Engineer",
-        "content": "We are seeking a DevOps Engineer to manage and automate our infrastructure. Responsibilities include deploying, automating, maintaining, and managing production systems on AWS or other cloud platforms."
-    
+        "title": "Blockchain Developer",
+        "content": "We are seeking a Blockchain Developer to design, implement, and maintain blockchain-based applications. Experience with blockchain platforms like Ethereum, Hyperledger, or Corda is preferred."
     }
+    
 
-resultado = requests.post(url=url_base_api, data=new_careers)
+result = requests.post(url=url_base_api, data=new_careers)
 
 
-# Testando o código de status HTTP 201
-assert resultado.status_code == 201
+# Testing the HTTP status code 201.
+assert result.status_code == 201
 
-# Testando se o título do curso retornado é o mesmo do informado
-assert resultado.json()['title'] == new_careers['title']
+# Testing if the returned course title matches the one provided.
+assert result.json()['title'] == new_careers['title']
