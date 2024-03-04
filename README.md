@@ -183,7 +183,7 @@ This script automates the setup process for a Django project with Celery, Redis,
 
 - Move into the cloned directory:
 
-	```cd apicodeleap```
+	```cd apicodeleap/Deploy```
 
   
 
