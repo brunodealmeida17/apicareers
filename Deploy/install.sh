@@ -3,8 +3,15 @@
 # Script de configuração para o projeto Django com Celery, Redis, Django Channels e Gunicorn
 
 # Capturar o diretório atual
-cd ../..
+
 APP_NAME='apicodeleap'
+
+
+mv APP_NAME.env $APP_NAME.env
+mv APP_NAME.service $APP_NAME.service
+mv APP_NAME $APP_NAME
+
+cd ../..
 
 echo "Digite a SERVE_name:"
 read uri
