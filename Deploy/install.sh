@@ -4,7 +4,7 @@
 
 # Capturar o diretório atual
 
-APP_NAME='apicodeleap'
+APP_NAME='apicareers'
 
 
 mv APP_NAME.env $APP_NAME.env
